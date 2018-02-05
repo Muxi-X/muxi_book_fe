@@ -31,7 +31,7 @@
         },
         methods: { 
             login() {
-                Login.toLoginPage
+                Login.toLoginPage()
             },
             ending:function(){
                 this.$emit("ending")

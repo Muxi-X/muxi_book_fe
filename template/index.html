@@ -1,10 +1,12 @@
 {% extends "base.html" %} {% block title %}Muxi-Book{% endblock %}
- {% block script %}
+ {% block script %}{% block css %}
+ <link rel="stylesheet" href="/static/css/index.css">
+ {% endblock %}
+
 
     <script src="/dist/index.js"></script>
     
         {% endblock %}
 {% block content %}
-{% include "svg.html" %}
         <div id="app"></div>
  {% endblock %}

@@ -17,15 +17,15 @@ router.get('/', function(ctx, next){
 });
 
 router.get('/mybook', function(ctx, next){
-    let template = swig.compileFile(path.resolve(templateRoot, "index.html"));
+    let template = swig.compileFile(path.resolve(templateRoot, "mybook.html"));
     ctx.body = template({})
 });
 router.get('/login', function(ctx, next){
-    let template = swig.compileFile(path.resolve(templateRoot, "index.html"));
+    let template = swig.compileFile(path.resolve(templateRoot, "login.html"));
     ctx.body = template({})
 });
 router.get('/landing', function(ctx, next){
-    let template = swig.compileFile(path.resolve(templateRoot, "index.html"));
+    let template = swig.compileFile(path.resolve(templateRoot, "landing.html"));
     ctx.body = template({})
 });
 

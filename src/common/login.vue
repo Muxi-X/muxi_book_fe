@@ -7,12 +7,11 @@
 </template>
 <script>
 import Cookie from '../service/cookie.js'
+import Login from '../service/login.js';
 export default {
 	methods: {
 		login() {
-			Cookie.setCookie('url', window.location.href)
-			//window.location = "http://pass.muxixyz.com?landing=blog.muxixyz.com/landing"
-			window.location = "http://pass.muxixyz.com?landing=localhost:3000/landing"
+			Login.toLoginPage();
 		}
 	}
 }

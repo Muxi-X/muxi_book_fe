@@ -123,11 +123,11 @@
                 username: this.username
             },this.token)
             .then(res => {
-                if(res.status == 401) {
-                    this.authorized = false
-                }
                 if(res.status == 200) {
-                    THIS.authorized = true
+                    this.authorized = true
+                }
+                else{
+                    this.authorized = false
                 }
             })
         }
