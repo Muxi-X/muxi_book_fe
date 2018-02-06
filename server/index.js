@@ -17,7 +17,7 @@ router.get('/', function(ctx, next){
 });
 
 router.get('/mybook', function(ctx, next){
-    let template = swig.compileFile(path.resolve(templateRoot, "mybook.html"));
+    let template = swig.compileFile(path.resolve(templateRoot, "myBook.html"));
     ctx.body = template({})
 });
 router.get('/login', function(ctx, next){
