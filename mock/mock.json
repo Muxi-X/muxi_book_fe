@@ -23,6 +23,12 @@
 			"endpoint": "/landing",
 			"template": "landing",
 			"async": false
+		},
+		{
+			"name" : "lsearch",
+			"endpoint": "/search",
+			"template": "search",
+			"async": false
 		}
 		
 	],

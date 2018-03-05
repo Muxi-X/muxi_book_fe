@@ -16,7 +16,8 @@ module.exports = {
         'index': ['./src/index.js'],
         'mybook': ['./src/mybook.js'],
         'login': ['./src/login.js'],
-        'landing': ['./src/landing.js']
+        'landing': ['./src/landing.js'],
+        'search': ['./src/search.js']
         // vendor: ["vue", "whatwg-fetch", "vuelidate", "vue-router"]
     },
     output: {
@@ -116,6 +117,13 @@ module.exports = {
             inject: false,
             template: path.join(__dirname, '../template/landing.ejs'),
             chunks: ['landing']
+        }),
+        new HtmlWebpackPlugin({
+            alwaysWriteToDisk: true,
+            filename: 'template/search.html',
+            inject: false,
+            template: path.join(__dirname, '../template/search.ejs'),
+            chunks: ['search']
         }),
         new HtmlWebpackHarddiskPlugin()
     ]

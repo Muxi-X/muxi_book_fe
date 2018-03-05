@@ -1,8 +1,9 @@
 <template>
     <div>
-        <form action="" method="get">
-            <input type="text" class="input-box">
-            <img src="../pictures/icon/search.png" class="input-button cp">
+        <form action="search" method="get">
+            <input type="text" class="input-box" name="keyword" v-model="keyword">
+            <img src="../pictures/icon/search.png" class="input-button cp"
+            @click="search">
         </form>
     </div>
 </template>
@@ -11,13 +12,17 @@
     export default {
         data() {
             return {
-               
+               keyword:""
             };
         },
         components: {
            
         },
         methods: {
+            search: function() {
+                window.location.href = './search?keyword='+this.keyword
+                //console.log(this.keyword)
+            }
         }
     }
 </script>

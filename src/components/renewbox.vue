@@ -53,15 +53,14 @@
                 this.$emit("ending");
             },
             renewBook: function() {
-                console.log(123);
                 FetchData.renewBook(this.myData,this.token)
                 .then(res => {
-                    console.log(res)
+                    //console.log(res)
                     if(res.ok){
                         this.returnSuccess = true;
                         this.returning = false;
                     }else{
-                        console.log(false)
+                        //console.log(false)
                         this.renewFalse = true;
                         this.returning = false
                     }

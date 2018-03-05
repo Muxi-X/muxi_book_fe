@@ -19,7 +19,7 @@ export default {
     mounted() {
 		this.username = window.location.href.split('?')[1].split('&')[0].split('=')[1]
 		this.username = decodeURIComponent(this.username)//中文格式
-		console.log(this.username);
+		// console.log(this.username);
         Cookie.setCookie('username',this.username);
         Cookie.setCookie('Mt', window.location.href.split('?')[1].split('&')[1].split('=')[1])
 		
@@ -31,12 +31,12 @@ export default {
         API.login(bodyin)
         .then(res => {
          if(res!==null&&res!==undefined){
-			console.log("登录成功")
+			// console.log("登录成功")
             return res.json();
 		} 
        })
         .then(res => {
-			console.log(res);
+			// console.log(res);
 			Cookie.setCookie("token", res.token);
 			this.token = Cookie.getCookie("token");
             //Cookie.setCookie("uid", value.user_id)

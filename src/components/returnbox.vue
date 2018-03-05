@@ -50,7 +50,7 @@
             returnBook: function() {
                 FetchData.returnBook(this.myData,this.token)
                 .then(res => {
-                    console.log(res)
+                    //console.log(res)
                     if(res.ok){
                         this.returnSuccess = true;
                         this.returning = false;

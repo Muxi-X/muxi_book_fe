@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block title %}Muxi-Book{% endblock %}
+ {% block script %}{% block css %}
+ <link rel="stylesheet" href="/static/css/search.css">
+ {% endblock %}
+
+<% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+    <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+    <% } %>
+        {% endblock %}
+{% block content %}
+        <div id="search"></div>
+ {% endblock %}

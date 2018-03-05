@@ -88,7 +88,7 @@
                         this.hasnobook = false;
                     }
                     this.Testbook = json.lend;
-                    console.log("test"+json.lend.length);
+                    // console.log("test"+json.lend.length);
                 })
             },
             returnBook: function(item) {
@@ -97,13 +97,13 @@
                 this.clickReturn = true;
             },
             renewBook: function(item) {
-                console.log("mybook");
+                // console.log("mybook");
                 this.bookitem = item
                 this.myData.no = item.no
                 // this.clickReturn = false;
                 this.clickRenew = true
-                console.log("renturn,"+this.clickReturn)
-                console.log("renew,"+this.clickRenew)
+                //console.log("renturn,"+this.clickReturn)
+                //console.log("renew,"+this.clickRenew)
             },
             ending: function(){
                 this.clickReturn = false;

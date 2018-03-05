@@ -17,7 +17,7 @@
                     v-model="borrowData.realname"
                     @keyup.enter="borrow">
                 </div>
-                <div class="reader-submit-bt cp"
+                <div class="reader-submit-bt main-style cp"
                 @click="borrow">
                     借阅
                 </div>
@@ -76,7 +76,7 @@
                 if (Cookie.getCookie("token")) {    
                     FetchData.borrowbook(this.borrowData,this.token)
                     .then(res => {
-                        console.log(res); 
+                        //console.log(res); 
                         if(res.status == 200) {
                             this.borrowShow = false;
                             this.borrowsuccess = true;

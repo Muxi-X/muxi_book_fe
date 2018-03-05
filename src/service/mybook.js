@@ -29,8 +29,6 @@ let service = {
 
     
     getMyBook(data,token){
-        console.log("token",token)
-        console.log(data)
         var self = this;
         return Fetch("/api/v1.0/mybooks/",{
             method: "POST",
@@ -39,8 +37,6 @@ let service = {
     },
 
     returnBook(data,token){
-        console.log("token",token)
-        console.log(data)
         var self = this;
         return Fetch("/api/v1.0/return/",{
             method: "POST",
@@ -49,10 +45,7 @@ let service = {
     },
 
     renewBook(data,token){
-        console.log("token",token)
-        console.log(data)
         var self = this;
-        console.log("renew");
         return Fetch("/api/v1.0/renew/",{
             method: "POST",
             data: data

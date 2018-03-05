@@ -82,7 +82,7 @@
                 .then(json => {
                     this.Testbook = json.books;//获取图书信息
                     this.totalPage = json.num % 9? Math.floor(json.num/9)+1 : json.num/9;
-                    console.log("totalpage="+this.totalPage+" nums="+json.num);
+                    // console.log("totalpage="+this.totalPage+" nums="+json.num);
                 })
                 
             },

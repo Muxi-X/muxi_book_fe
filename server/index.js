@@ -28,7 +28,10 @@ router.get('/landing', function(ctx, next){
     let template = swig.compileFile(path.resolve(templateRoot, "landing.html"));
     ctx.body = template({})
 });
-
+router.get('/search', function(ctx, next){
+    let template = swig.compileFile(path.resolve(templateRoot, "search.html"));
+    ctx.body = template({})
+});
 router.get(/^\/static(?:\/|$)/, async(ctx) => {
     let filepath = ctx.path.replace(/static\//, "")
     await send(ctx, filepath, {

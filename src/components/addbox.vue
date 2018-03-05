@@ -89,7 +89,7 @@
             addbook: function(){
                 FetchData.addbook(this.addData)
                 .then(res => {
-                    console.log(res)
+                    //console.log(res)
                     if(res.ok){
                         this.adding = false;
                         this.addSuccess = true;

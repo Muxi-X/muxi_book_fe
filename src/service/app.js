@@ -13,8 +13,8 @@ let service = {
         })
     },
     borrowbook(data,token){
-        console.log("token",token)
-        console.log(data)
+        //console.log("token",token)
+        //console.log(data)
         var self = this;
         return Fetch("/api/v1.0/booklend/",{
             method: "POST",

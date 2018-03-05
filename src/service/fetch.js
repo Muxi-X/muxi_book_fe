@@ -18,7 +18,7 @@ export default function Fetch(url, opt = {}, token) {
         
             return fetch(url, opt)
             .then(res => {
-                console.log(opt);
+                //console.log(opt);
                 switch (res.status) {
                     case 200:
                         return res;
